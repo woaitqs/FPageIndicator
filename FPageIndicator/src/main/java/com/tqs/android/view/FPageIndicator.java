@@ -188,6 +188,16 @@ public class FPageIndicator extends View {
 
   }
 
+  private static int dpToPx(int dp) {
+    return (int) TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
+  }
+
+  /**
+   * 设置当前选中的位置.
+   *
+   * @param pos 当前位置.
+   */
   public void setSelectedPos(int pos) {
     if (this.selectedPos != pos) {
       this.selectedPos = pos;
@@ -195,6 +205,11 @@ public class FPageIndicator extends View {
     }
   }
 
+  /**
+   * Page Indicator 总共的数目
+   *
+   * @param count 总数目.
+   */
   public void setCount(int count) {
     if (count != this.count) {
       this.count = count;
@@ -202,11 +217,11 @@ public class FPageIndicator extends View {
     }
   }
 
-  private static int dpToPx(int dp) {
-    return (int) TypedValue.applyDimension(
-        TypedValue.COMPLEX_UNIT_DIP, dp, Resources.getSystem().getDisplayMetrics());
-  }
-
+  /**
+   * 如果想和 ViewPager 绑定起来，直接调用这个接口即可.
+   *
+   * @param viewPager viewpager.
+   */
   public void attachToViewPager(ViewPager viewPager) {
     if (viewPager == null) {
       return;
