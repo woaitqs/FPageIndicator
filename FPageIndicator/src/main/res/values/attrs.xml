@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageIndicator">
+
+        <attr name="pi_count" format="integer" />
+
+        <attr name="pi_out_radius" format="dimension" />
+        <attr name="pi_radius" format="dimension" />
+
+        <attr name="pi_un_focus_color" format="color"/>
+        <attr name="pi_focus_color" format="color"/>
+
+        <attr name="pi_padding" format="dimension"/>
+
+    </declare-styleable>
+</resources>
