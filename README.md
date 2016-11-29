@@ -1,6 +1,8 @@
 # FPageIndicator
 用来显示当前所在页的页面指示器，具体样式见Readme中的Gif文件。
 
+具体实现方式，在这篇博客里面有详细地说明。[http://www.woaitqs.cc/android/2016/11/28/android-view-theory-5.html](http://www.woaitqs.cc/android/2016/11/28/android-view-theory-5.html)
+
 ![样式展示](https://cloud.githubusercontent.com/assets/1680722/20701135/42297c0a-b64c-11e6-8eea-ab706946af90.gif)
 
 ---------------
