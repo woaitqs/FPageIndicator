@@ -213,7 +213,7 @@ public class FPageIndicator extends View {
   public void setCount(int count) {
     if (count != this.count) {
       this.count = count;
-      requestFocus();
+      requestLayout();
     }
   }
 
